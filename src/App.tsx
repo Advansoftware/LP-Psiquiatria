@@ -183,7 +183,7 @@ export default function App() {
 
       {/* Trust Bar */}
       <div className="bg-white border-b border-[#e7e5e4] py-7 px-[5%]">
-        <div className="max-w-[900px] mx-auto flex flex-wrap justify-center items-center gap-10">
+        <div className="max-w-[900px] mx-auto grid grid-cols-2 gap-y-6 gap-x-8 w-fit md:w-full md:flex md:flex-wrap md:justify-center md:items-center md:gap-10">
           <TrustItem icon={<Shield />} text="+10 anos de experiência" delay={0} />
           <TrustItem icon={<Monitor />} text="Teleconsulta disponível" delay={0.2} />
           <TrustItem icon={<Activity />} text="Abordagem integrativa" delay={0.4} />
@@ -392,10 +392,10 @@ function TrustItem({ icon, text, delay = 0 }: { icon: ReactNode, text: string, d
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.3 }}
       transition={{ duration: 1, delay, ease: "easeOut" }}
-      className="flex items-center gap-2.5"
+      className="flex items-center gap-2.5 md:mx-0"
     >
       <div className="w-8.5 h-8.5 rounded-full bg-[#eaedd9] flex items-center justify-center shrink-0">
-        {icon && <div className="w-4 h-4 text-[#5d6a36]">{icon}</div>}
+        {icon && <div className="w-4 h-4 text-[#5d6a36] flex items-center justify-center [&>svg]:w-full [&>svg]:h-full">{icon}</div>}
       </div>
       <span className="text-[0.84rem] text-[#78716c] font-normal">{text}</span>
     </motion.div>
@@ -416,7 +416,7 @@ function ServiceCard({ num, icon, title, body, delay = 0 }: { num: string, icon:
         {num}
       </span>
       <div className="w-13 h-13 rounded-lg bg-[#eaedd9] flex items-center justify-center mb-6 transition-colors duration-350 group-hover:bg-[#d3d9b3]">
-        {icon && <div className="w-6 h-6 text-[#5d6a36]">{icon}</div>}
+        {icon && <div className="w-6 h-6 text-[#5d6a36] flex items-center justify-center [&>svg]:w-full [&>svg]:h-full">{icon}</div>}
       </div>
       <h3 className="serif text-[1.35rem] font-medium text-[#1c1917] mb-2.5">{title}</h3>
       <p className="text-[0.875rem] text-[#a8a29e] leading-[1.75]">{body}</p>
