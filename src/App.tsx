@@ -64,6 +64,7 @@ export default function App() {
             target="_blank" 
             rel="noopener noreferrer" 
             className="btn btn-primary hidden md:flex text-[0.82rem] px-5.5 py-2.8"
+            aria-label="Agendar consulta pelo WhatsApp"
           >
             <WhatsAppIcon className="w-[15px] h-[15px]" />
             Agendar Consulta
@@ -97,8 +98,8 @@ export default function App() {
             transition={{ duration: 1.2, delay: 0.4, ease: [0.22, 1, 0.36, 1] }}
             className="serif text-4xl md:text-5xl lg:text-[3.4rem] font-medium leading-[1.12] text-[#1c1917] tracking-tight mb-6"
           >
-            Recupere seu<br />
-            <em className="italic text-[#5d6a36] not-italic">equilíbrio emocional</em><br />
+            Psiquiatria Clínica em São Paulo:<br />
+            <em className="italic text-[#5d6a36] not-italic">Equilíbrio emocional</em><br />
             com cuidado especializado
           </motion.h1>
 
@@ -122,6 +123,7 @@ export default function App() {
               target="_blank" 
               rel="noopener noreferrer" 
               className="btn btn-primary"
+              aria-label="Agendar consulta pelo WhatsApp"
             >
               <WhatsAppIcon className="w-[18px] h-[18px]" />
               Agendar Consulta
@@ -344,6 +346,7 @@ export default function App() {
             target="_blank" 
             rel="noopener noreferrer" 
             className="btn-wa group"
+            aria-label="Agendar consulta pelo WhatsApp"
           >
             <WhatsAppIcon className="w-5.5 h-5.5 fill-[#25D366]" />
             Agendar Consulta pelo WhatsApp
@@ -355,8 +358,9 @@ export default function App() {
       {/* Footer */}
       <footer className="bg-[#1c1917] py-10 px-[5%] text-center">
         <p className="serif text-[1.05rem] text-white/55 mb-1.5">Dra. Ana Beatriz Moreira</p>
-        <p className="text-[0.72rem] tracking-widest text-white/25 mb-2">CRM/SP 123.456 &nbsp;·&nbsp; Psiquiatria</p>
-        <p className="text-[0.72rem] text-white/18">Este site tem caráter informativo e não substitui a consulta médica.</p>
+        <p className="text-[0.72rem] tracking-widest text-white/25 mb-2">CRM/SP 123.456 &nbsp;·&nbsp; Psiquiatria Clínica em São Paulo</p>
+        <p className="text-[0.72rem] text-white/18">Especialista em Ansiedade, TDAH e Insônia. Atendimento humanizado e individualizado.</p>
+        <p className="text-[0.72rem] text-white/18 mt-4">Este site tem caráter informativo e não substitui a consulta médica.</p>
       </footer>
 
       {/* WhatsApp Float */}
