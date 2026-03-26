@@ -1,0 +1,132 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: 'Cormorant Garamond', Georgia, serif;
+  --font-body: 'DM Sans', system-ui, sans-serif;
+}
+
+:root {
+  --sage-50:  #f5f6f0;
+  --sage-100: #eaedd9;
+  --sage-200: #d3d9b3;
+  --sage-300: #b5bf88;
+  --sage-400: #96a460;
+  --sage-500: #788746;
+  --sage-600: #5d6a36;
+  --sage-700: #48522b;
+  --sage-800: #3a4124;
+  --sage-900: #2d3319;
+  --stone-50:  #fafaf9;
+  --stone-100: #f5f5f4;
+  --stone-200: #e7e5e4;
+  --stone-300: #d6d3d1;
+  --stone-400: #a8a29e;
+  --stone-500: #78716c;
+  --stone-600: #57534e;
+  --stone-700: #44403c;
+  --stone-800: #292524;
+  --stone-900: #1c1917;
+  --white: #ffffff;
+
+  --transition: 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  --transition-fast: 0.18s ease;
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-xl: 32px;
+  --radius-full: 9999px;
+}
+
+html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; }
+
+body {
+  font-family: 'DM Sans', system-ui, sans-serif;
+  color: #44403c;
+  background: #fafaf9;
+  font-size: 16px;
+  line-height: 1.7;
+  overflow-x: hidden;
+}
+
+.serif { font-family: 'Cormorant Garamond', serif; }
+
+.eyebrow {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.68rem;
+  font-weight: 500;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: #788746;
+}
+
+.accent-line {
+  display: block;
+  width: 48px;
+  height: 1.5px;
+  background: linear-gradient(90deg, #96a460, #b5bf88);
+  margin-bottom: 1.5rem;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.875rem;
+  font-weight: 500;
+  padding: 0.85rem 1.8rem;
+  border-radius: 9999px;
+  border: none;
+  cursor: pointer;
+  transition: 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  white-space: nowrap;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-primary {
+  background: #48522b;
+  color: #fff;
+  box-shadow: 0 4px 24px rgba(72,82,43,0.28);
+}
+
+.btn-ghost {
+  background: transparent;
+  color: #57534e;
+  border: 1px solid #d6d3d1;
+}
+
+.btn-wa {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: #fff;
+  color: #3a4124;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.93rem;
+  font-weight: 500;
+  padding: 1rem 2.25rem;
+  border-radius: 9999px;
+  box-shadow: 0 8px 40px rgba(0,0,0,0.2);
+  transition: 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.wa-float {
+  position: fixed;
+  bottom: 1.75rem;
+  right: 1.75rem;
+  z-index: 200;
+  width: 60px; height: 60px;
+  border-radius: 50%;
+  background: #25D366;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 32px rgba(37,211,102,0.4);
+}
+
+.glass-header {
+  background: rgba(250,250,249,0.7);
+  backdrop-filter: blur(12px) saturate(1.4);
+  -webkit-backdrop-filter: blur(12px) saturate(1.4);
+}
